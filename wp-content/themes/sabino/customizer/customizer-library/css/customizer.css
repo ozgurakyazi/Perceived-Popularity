@@ -1,0 +1,53 @@
+#customize-theme-controls #accordion-section-title_tagline h3:hover,
+#customize-theme-controls #accordion-panel-sabino-panel-settings h3:hover,
+#customize-theme-controls #accordion-panel-sabino-panel-text h3:hover,
+#customize-theme-controls #accordion-panel-sabino-panel-font h3:hover,
+#customize-theme-controls #accordion-section-colors h3:hover,
+#customize-theme-controls #accordion-section-sabino-social-section h3:hover {
+    background-color: #006CC9;
+    color: #FFF;
+}
+
+#customize-controls .control-section .customize-section-title h3 {
+	color: inherit;
+}
+
+#accordion-section-sabino_premium a.button {
+	background-color: #006CC9;
+    color: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: none;
+    position: relative;
+    top: -3px;
+    font-weight: 400;
+}
+#accordion-section-sabino_premium a.button:hover {
+	background-color: #055ba5;
+}
+
+.kaira-upsell {
+    margin-top: 30px;
+    font-size: 11px;
+    color: rgb(142, 142, 142);
+}
+.kaira-upsell b {
+    font-weight: 500;
+    color: #006cc9;
+}
+
+#customize-control-custom_logo,
+#customize-control-blogdescription,
+#customize-control-sabino-set-container-width,
+#customize-control-sabino-slider-cats,
+#customize-control-sabino-body-font-color,
+#customize-control-sabino-custom-phicon,
+#customize-control-background_color {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 0 25px;
+    margin-bottom: 20px;
+}
+#customize-control-sabino-remove-page-titles {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 25px 0 0;
+    margin-top: 20px;
+}

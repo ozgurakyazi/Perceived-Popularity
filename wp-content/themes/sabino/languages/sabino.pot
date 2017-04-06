@@ -1,0 +1,1186 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sabino\n"
+"POT-Creation-Date: 2017-03-24 14:17+0200\n"
+"PO-Revision-Date: 2016-11-22 15:17+0200\n"
+"Last-Translator: \n"
+"Language-Team: Kaira\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_n:1,2;__ngettext:1,2;"
+"__ngettext_noop:1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: js\n"
+
+#: 404.php:20 customizer/customizer-options.php:350
+msgid "Oops! <span>404</span>"
+msgstr ""
+
+#: 404.php:25 customizer/customizer-options.php:358
+msgid ""
+"It looks like that page does not exist. <br />Return home or try a search"
+msgstr ""
+
+#: comments.php:38 comments.php:59
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:41 comments.php:62
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:42 comments.php:63
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:75
+msgid "Comments are closed."
+msgstr ""
+
+#: customizer/customizer-library/extensions/fonts.php:18
+msgid "Standard Fonts"
+msgstr ""
+
+#: customizer/customizer-library/extensions/fonts.php:20
+msgid "Google Fonts"
+msgstr ""
+
+#: customizer/customizer-library/extensions/fonts.php:125
+msgid "All"
+msgstr ""
+
+#: customizer/customizer-library/extensions/fonts.php:126
+msgid "Cyrillic"
+msgstr ""
+
+#: customizer/customizer-library/extensions/fonts.php:127
+msgid "Cyrillic Extended"
+msgstr ""
+
+#: customizer/customizer-library/extensions/fonts.php:128
+msgid "Devanagari"
+msgstr ""
+
+#: customizer/customizer-library/extensions/fonts.php:129
+msgid "Greek"
+msgstr ""
+
+#: customizer/customizer-library/extensions/fonts.php:130
+msgid "Greek Extended"
+msgstr ""
+
+#: customizer/customizer-library/extensions/fonts.php:131
+msgid "Khmer"
+msgstr ""
+
+#: customizer/customizer-library/extensions/fonts.php:132
+msgid "Latin"
+msgstr ""
+
+#: customizer/customizer-library/extensions/fonts.php:133
+msgid "Latin Extended"
+msgstr ""
+
+#: customizer/customizer-library/extensions/fonts.php:134
+msgid "Vietnamese"
+msgstr ""
+
+#: customizer/customizer-library/extensions/fonts.php:194
+msgctxt "font style"
+msgid "Serif"
+msgstr ""
+
+#: customizer/customizer-library/extensions/fonts.php:198
+msgctxt "font style"
+msgid "Sans Serif"
+msgstr ""
+
+#: customizer/customizer-library/extensions/fonts.php:202
+msgctxt "font style"
+msgid "Monospaced"
+msgstr ""
+
+#: customizer/customizer-options.php:34
+msgid "Logo Max Width"
+msgstr ""
+
+#: customizer/customizer-options.php:42
+msgid "Theme Settings"
+msgstr ""
+
+#: customizer/customizer-options.php:49
+msgid "Site Layout"
+msgstr ""
+
+#: customizer/customizer-options.php:56
+msgid "Site Container Width"
+msgstr ""
+
+#: customizer/customizer-options.php:67
+msgid "Content Joined Layout"
+msgstr ""
+
+#: customizer/customizer-options.php:68
+msgid "Content Blocks Layout"
+msgstr ""
+
+#: customizer/customizer-options.php:72
+msgid "Site Content Layout"
+msgstr ""
+
+#: customizer/customizer-options.php:80
+msgid "break up the sidebar widgets"
+msgstr ""
+
+#: customizer/customizer-options.php:87
+msgid "Remove Page Titles"
+msgstr ""
+
+#: customizer/customizer-options.php:97
+msgid ""
+"<b>Premium Extra Features:</b><br />- Adjust Sidebar width<br />- Break "
+"Content Area & Widget area into blocks<br />- Break widgets into separate "
+"blocks"
+msgstr ""
+
+#: customizer/customizer-options.php:105 customizer/customizer-options.php:267
+msgid "Header"
+msgstr ""
+
+#: customizer/customizer-options.php:111
+msgid "Header Layout One"
+msgstr ""
+
+#: customizer/customizer-options.php:112
+msgid "Header Layout Two"
+msgstr ""
+
+#: customizer/customizer-options.php:116
+msgid "Header Layout"
+msgstr ""
+
+#: customizer/customizer-options.php:126
+msgid ""
+"<b>Premium Extra Features:</b><br />- Change Header Two to a Centered "
+"Layout<br />- Remove Phone Number<br />- Remove Social Icons<br />- Remove "
+"Search<br />- Remove WooCommerce Cart"
+msgstr ""
+
+#: customizer/customizer-options.php:133
+msgid "Home Page Slider"
+msgstr ""
+
+#: customizer/customizer-options.php:139
+msgid "Default Slider"
+msgstr ""
+
+#: customizer/customizer-options.php:140 functions.php:366
+msgid "Meta Slider"
+msgstr ""
+
+#: customizer/customizer-options.php:141 customizer/customizer-options.php:237
+msgid "None"
+msgstr ""
+
+#: customizer/customizer-options.php:145
+msgid "Choose a Slider"
+msgstr ""
+
+#: customizer/customizer-options.php:153
+msgid "Slider Categories"
+msgstr ""
+
+#: customizer/customizer-options.php:156
+msgid ""
+"Enter the ID's of the post categories you want to display in the slider. Eg: "
+"\"13,17,19\" (no spaces and only comma's)<br /><br />Get the ID at <b>Posts -"
+"> Categories</b>.<br /><br />Or <a href=\"https://kairaweb.com/documentation/"
+"setting-up-the-default-slider/\" target=\"_blank\"><b>See more instructions "
+"here</b></a>"
+msgstr ""
+
+#: customizer/customizer-options.php:160
+msgid "Slider Shortcode"
+msgstr ""
+
+#: customizer/customizer-options.php:163
+msgid "Enter the shortcode give by the slider plugin"
+msgstr ""
+
+#: customizer/customizer-options.php:166
+msgid "Small Slider"
+msgstr ""
+
+#: customizer/customizer-options.php:167
+msgid "Medium Slider"
+msgstr ""
+
+#: customizer/customizer-options.php:168
+msgid "Large Slider"
+msgstr ""
+
+#: customizer/customizer-options.php:172
+msgid "Slider Size"
+msgstr ""
+
+#: customizer/customizer-options.php:182
+msgid ""
+"<b>Premium Extra Features:</b><br />- Make Slider Full Width<br />- Select "
+"Slider scroll effect<br />- Change Slider scroll duration<br />- Link slide "
+"to post<br />- Remove Slider titles<br />- Stop auto scroll"
+msgstr ""
+
+#: customizer/customizer-options.php:191
+msgid "Blog"
+msgstr ""
+
+#: customizer/customizer-options.php:197
+msgid "Left Layout"
+msgstr ""
+
+#: customizer/customizer-options.php:198
+msgid "Right Layout"
+msgstr ""
+
+#: customizer/customizer-options.php:199
+msgid "Alternate Layout"
+msgstr ""
+
+#: customizer/customizer-options.php:200
+msgid "Top Layout"
+msgstr ""
+
+#: customizer/customizer-options.php:204
+msgid "Blog Posts Layout"
+msgstr ""
+
+#: customizer/customizer-options.php:212
+msgid "Exclude Blog Categories"
+msgstr ""
+
+#: customizer/customizer-options.php:215
+msgid ""
+"Enter the ID's of the post categories you'd like to EXCLUDE from the Blog, "
+"enter only the ID's with a minus sign (-) before them, separated by a comma "
+"(,)<br />Eg: \"-13, -17, -19\"<br />If you enter the ID's without the minus "
+"then it'll show ONLY posts in those categories."
+msgstr ""
+
+#: customizer/customizer-options.php:222
+msgid ""
+"<b>Premium Extra Features:</b><br />- Set Blog List/Archive/Single pages to "
+"Left Sidebar<br />- Set Blog List/Archive/Single pages to Full Width<br /"
+"><br />- Set WooCommerce Shop/Archive/Single pages to Left Sidebar<br />- "
+"Set WooCommerce Shop/Archive/Single pages to Full Width"
+msgstr ""
+
+#: customizer/customizer-options.php:229 customizer/customizer-options.php:316
+msgid "Footer"
+msgstr ""
+
+#: customizer/customizer-options.php:235
+msgid "Standard Layout"
+msgstr ""
+
+#: customizer/customizer-options.php:236
+msgid "Social Layout"
+msgstr ""
+
+#: customizer/customizer-options.php:241
+msgid "Footer Layout"
+msgstr ""
+
+#: customizer/customizer-options.php:252
+msgid ""
+"<b>Premium Extra Features:</b><br />- Offers an advanced custom footer "
+"layout - Set custom columns (Widget) and customize the column widths<br />- "
+"Remove Footer bottom bar"
+msgstr ""
+
+#: customizer/customizer-options.php:260
+msgid "Theme Text"
+msgstr ""
+
+#: customizer/customizer-options.php:274
+msgid "Custom Icon"
+msgstr ""
+
+#: customizer/customizer-options.php:277
+msgid ""
+"Change the phone icon by entering another<br /><a href=\"http://fontawesome."
+"io/icons/\" target=\"_blank\">Font Awesome</a> class here<br />Eg: \"fa-map-"
+"marker\""
+msgstr ""
+
+#: customizer/customizer-options.php:281
+msgid "Smaller Text"
+msgstr ""
+
+#: customizer/customizer-options.php:284
+msgid "Give us a call:"
+msgstr ""
+
+#: customizer/customizer-options.php:288
+msgid "Larger Text"
+msgstr ""
+
+#: customizer/customizer-options.php:291
+msgid "082 444 YEAH"
+msgstr ""
+
+#: customizer/customizer-options.php:298
+msgid "Navigation"
+msgstr ""
+
+#: customizer/customizer-options.php:305
+msgid "Menu Button Text"
+msgstr ""
+
+#: customizer/customizer-options.php:309
+msgid "This is the text for the mobile menu button"
+msgstr ""
+
+#: customizer/customizer-options.php:323
+msgid "Footer Address"
+msgstr ""
+
+#: customizer/customizer-options.php:326
+msgid "Cape Town, South Africa"
+msgstr ""
+
+#: customizer/customizer-options.php:333
+msgid ""
+"<b>Premium Extra Features:</b><br />- Change attribution text to your own "
+"copyright text"
+msgstr ""
+
+#: customizer/customizer-options.php:340
+msgid "Error 404"
+msgstr ""
+
+#: customizer/customizer-options.php:347
+msgid "404 Error Page Heading"
+msgstr ""
+
+#: customizer/customizer-options.php:351
+msgid "Enter the heading for the 404 Error page"
+msgstr ""
+
+#: customizer/customizer-options.php:355
+msgid "Error 404 Message"
+msgstr ""
+
+#: customizer/customizer-options.php:359
+msgid "Enter the default text on the 404 error page (Page not found)"
+msgstr ""
+
+#: customizer/customizer-options.php:366
+msgid "No Results"
+msgstr ""
+
+#: customizer/customizer-options.php:373
+msgid "No Search Results Heading"
+msgstr ""
+
+#: customizer/customizer-options.php:376 templates/contents/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: customizer/customizer-options.php:377
+msgid "Enter the heading when no search results are found"
+msgstr ""
+
+#: customizer/customizer-options.php:381
+msgid "No Search Results"
+msgstr ""
+
+#: customizer/customizer-options.php:384 templates/contents/content-none.php:24
+#: templates/contents/content-none.php:28
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: customizer/customizer-options.php:385
+msgid "Enter the default text for when no search results are found"
+msgstr ""
+
+#: customizer/customizer-options.php:393
+msgid "Theme Fonts"
+msgstr ""
+
+#: customizer/customizer-options.php:401
+msgid "Default"
+msgstr ""
+
+#: customizer/customizer-options.php:408
+msgid "Body Font"
+msgstr ""
+
+#: customizer/customizer-options.php:416
+msgid "Body Font Color"
+msgstr ""
+
+#: customizer/customizer-options.php:424
+msgid "Heading Font"
+msgstr ""
+
+#: customizer/customizer-options.php:432
+msgid "Heading Font Color"
+msgstr ""
+
+#: customizer/customizer-options.php:442
+msgid ""
+"<b>Premium Extra Features:</b><br />- Set Site Title & Tagline custom "
+"fonts<br />- Set Site Title & Tagline custom font sizes<br />- Set Spacing "
+"between Title & Tagline"
+msgstr ""
+
+#: customizer/customizer-options.php:451
+msgid "Colors"
+msgstr ""
+
+#: customizer/customizer-options.php:457
+msgid "Primary Color"
+msgstr ""
+
+#: customizer/customizer-options.php:465
+msgid "Secondary Color"
+msgstr ""
+
+#: customizer/customizer-options.php:476
+msgid "Social Links"
+msgstr ""
+
+#: customizer/customizer-options.php:482
+msgid "Email Address"
+msgstr ""
+
+#: customizer/customizer-options.php:488
+msgid "Skype Name"
+msgstr ""
+
+#: customizer/customizer-options.php:494
+msgid "Facebook"
+msgstr ""
+
+#: customizer/customizer-options.php:500
+msgid "Twitter"
+msgstr ""
+
+#: customizer/customizer-options.php:506
+msgid "Google Plus"
+msgstr ""
+
+#: customizer/customizer-options.php:512
+msgid "LinkedIn"
+msgstr ""
+
+#: customizer/customizer-options.php:518
+msgid "Tumblr"
+msgstr ""
+
+#: customizer/customizer-options.php:524
+msgid "Flickr"
+msgstr ""
+
+#: customizer/customizer-options.php:533
+msgid ""
+"<b>Premium Extra Features:</b><br />- Over 20 different social profile links "
+"available<br />- Setting to add any required custom social icon<br />- Or "
+"let us know which links you need and we'll add it!"
+msgstr ""
+
+#: functions.php:75
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:76
+msgid "Header Secondary Menu"
+msgstr ""
+
+#: functions.php:77
+msgid "Footer Bar Menu"
+msgstr ""
+
+#: functions.php:116
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:126
+msgid "Sabino Footer Standard"
+msgstr ""
+
+#: functions.php:128
+msgid "The footer will divide into however many widgets are placed here."
+msgstr ""
+
+#: functions.php:341
+msgid "Page Builder"
+msgstr ""
+
+#: functions.php:346
+msgid "WooCommerce"
+msgstr ""
+
+#: functions.php:351
+msgid "Widgets Bundle"
+msgstr ""
+
+#: functions.php:356
+msgid "Contact Form 7"
+msgstr ""
+
+#: functions.php:361
+msgid "Breadcrumb NavXT"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:330
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:332
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:386
+#: includes/inc/class-tgm-plugin-activation.php:827
+#: includes/inc/class-tgm-plugin-activation.php:2533
+#: includes/inc/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:387
+#: includes/inc/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:388
+#: includes/inc/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/inc/class-tgm-plugin-activation.php:390
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:392
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:394
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:396
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:934
+#: includes/inc/class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:1121
+#: includes/inc/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:1982
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2342
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2392
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2396
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2400
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2603
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2608
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2614
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:3498
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:3501
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:3503
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:3509
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:3509
+#: includes/inc/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:3509
+#: includes/inc/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:3512
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:3517
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#: includes/inc/class-tgm-plugin-activation.php:3520
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: includes/inc/template-tags.php:28
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: includes/inc/template-tags.php:33
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: includes/inc/template-tags.php:50 includes/inc/template-tags.php:56
+msgid ", "
+msgstr ""
+
+#: includes/inc/template-tags.php:52
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: includes/inc/template-tags.php:58
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: includes/inc/template-tags.php:64
+msgid "Leave a comment"
+msgstr ""
+
+#: includes/inc/template-tags.php:64
+msgid "1 Comment"
+msgstr ""
+
+#: includes/inc/template-tags.php:64
+msgid "% Comments"
+msgstr ""
+
+#: includes/inc/template-tags.php:68 templates/contents/content-page.php:22
+msgid "Edit"
+msgstr ""
+
+#: includes/inc/woocommerce-cart.php:9
+#: templates/header/header-layout-one.php:35
+#: templates/header/header-layout-two.php:31
+msgid "View your shopping cart"
+msgstr ""
+
+#: includes/inc/woocommerce-cart.php:11
+#: templates/header/header-layout-one.php:37
+#: templates/header/header-layout-two.php:33
+#, php-format
+msgid "%d"
+msgid_plural "%d"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/sabino-pro/class-customize.php:76
+#: templates/footer/footer-none.php:9 templates/footer/footer-social.php:44
+#: templates/footer/footer-standard.php:24
+msgid "Sabino"
+msgstr ""
+
+#: includes/sabino-pro/class-customize.php:77 upgrade/tpl/upgrade-page.php:38
+#: upgrade/tpl/upgrade-page.php:44
+msgid "Upgrade to Premium"
+msgstr ""
+
+#: searchform.php:9
+msgctxt "placeholder"
+msgid "Search &amp; hit enter&hellip;"
+msgstr ""
+
+#: searchform.php:11
+msgctxt "submit button"
+msgid "&nbsp;"
+msgstr ""
+
+#: templates/contents/content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: templates/contents/content-page.php:15
+#: templates/contents/content-search.php:47
+#: templates/contents/content-single.php:20 templates/contents/content.php:43
+msgid "Pages:"
+msgstr ""
+
+#: templates/contents/content-search.php:40 templates/contents/content.php:36
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: templates/footer/footer-none.php:9 templates/footer/footer-social.php:44
+#: templates/footer/footer-standard.php:24
+#, php-format
+msgid "Theme: %1$s by %2$s"
+msgstr ""
+
+#: templates/footer/footer-none.php:9 templates/footer/footer-social.php:44
+#: templates/footer/footer-standard.php:24
+msgid "<a href=\"https://kairaweb.com/\">Kaira</a>"
+msgstr ""
+
+#: templates/footer/footer-social.php:8 templates/social-links.php:3
+msgid "Send Us an Email"
+msgstr ""
+
+#: templates/footer/footer-social.php:12 templates/social-links.php:7
+msgid "Contact Us on Skype"
+msgstr ""
+
+#: templates/footer/footer-social.php:16 templates/social-links.php:11
+msgid "Find Us on Facebook"
+msgstr ""
+
+#: templates/footer/footer-social.php:20 templates/social-links.php:15
+msgid "Follow Us on Twitter"
+msgstr ""
+
+#: templates/footer/footer-social.php:24 templates/social-links.php:19
+msgid "Find Us on Google Plus"
+msgstr ""
+
+#: templates/footer/footer-social.php:28 templates/social-links.php:23
+msgid "Find Us on LinkedIn"
+msgstr ""
+
+#: templates/footer/footer-social.php:32 templates/social-links.php:27
+msgid "Find Us on Tumblr"
+msgstr ""
+
+#: templates/footer/footer-social.php:36 templates/social-links.php:31
+msgid "Find Us on Flickr"
+msgstr ""
+
+#: templates/footer/footer-social.php:40
+msgid "Built in sunny Cape Town, South Africa"
+msgstr ""
+
+#: templates/footer/footer-standard.php:11
+msgid "Add your own widgets here"
+msgstr ""
+
+#: templates/slider/homepage-slider.php:86
+msgid "Highly Customizable"
+msgstr ""
+
+#: templates/slider/homepage-slider.php:88
+msgid ""
+"Integrated with WooCommerce, SiteOrigin's Page Builder, Contact Form 7 and "
+"more..."
+msgstr ""
+
+#: templates/slider/homepage-slider.php:109
+msgid "Beautiful online store"
+msgstr ""
+
+#: templates/slider/homepage-slider.php:111
+msgid "Easily create your online presence with our Vogue WordPress theme"
+msgstr ""
+
+#: templates/titlebar.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:4 upgrade/upgrade.php:13
+msgid "About Sabino"
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:13
+msgid "<span>Sabino Premium </span><em>$25</em>"
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:18
+msgid "<span>Simple Steps to upgrade"
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:21
+msgid "Purchase and Download Sabino Premium"
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:24
+msgid "Delete the old free Sabino theme"
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:25
+msgid ""
+"Upload and <a href=\"https://kairaweb.com/documentation/install-theme-zip-"
+"file/\" target=\"_blank\">install the Sabino Premium zip</a> as normal at:"
+"<b>Appearance -> Themes -> Add New -> Upload Theme</b>"
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:29
+msgid ""
+"We support all our themes, offering one on one email support to help you "
+"build the website you want"
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:30
+msgid ""
+"While we do support our both free and premium themes... <strong>Premium "
+"themes get prioritized support</strong>"
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:41
+msgid ""
+"If you've enjoyed using our Sabino theme to build your website, then you "
+"should love the premium version which comes with a bunch of extra premium "
+"features for a low cost of <strong>$25</strong>.<br /><br />With Sabino "
+"premium we offer continued updates and you'll get prioritized support to "
+"help you build the website you want."
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:49 upgrade/tpl/upgrade-page.php:55
+msgid "Continued Updates"
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:52
+msgid ""
+"Once you upgrade to Sabino Premium, you'll then support and move over to our "
+"premium updates system which will ensure sabino works with all future "
+"versions of WordPress that are released."
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:60 upgrade/tpl/upgrade-page.php:66
+msgid "Get Premium Support"
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:63
+msgid ""
+"Upgrading to Sabino Premium will also give you prioritized support, ensuring "
+"we get to your queries first.<br /><br />We have a growing <a href='https://"
+"kairaweb.com/documentation/' target='_blank'>support forum</a> on our "
+"website as well as <a href='https://kairaweb.com/support-contact/' "
+"target='_blank'>email support</a> to sort out any queries you may have."
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:77
+msgid ""
+"We aim to keep our prices low, all our themes are under <strong>$30</"
+"strong>, while still offering you great WordPress themes."
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:79
+msgid ""
+"Upgrading will support us and enable us to keep building WordPress themes."
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:81
+#, php-format
+msgid ""
+"If you like our themes and/or found our support helpful, please let us know "
+"by <a href='%s' target='_blank'>giving us a review</a>."
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:85
+msgid "Theme Ratings"
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:97
+msgid "SpySunny"
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:100
+msgid "Very user-friendly theme with excellent support."
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:106
+msgid "Fitoni"
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:109
+msgid ""
+"What a great theme!! been using it for a long time, very clean code, easy to "
+"use, easy to customize, really cant say any wrong about it!!!<br /><br /"
+">Give it a try and you will not be dissapointed! this theme is THE BEST!!"
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:115
+msgid "NayWordPress"
+msgstr ""
+
+#: upgrade/tpl/upgrade-page.php:118
+msgid ""
+"I've purchased the Premium Theme for my Online Store. Very awesome! Support "
+"assistance 100&#37; available, easy to customize. I recommend it to everyone "
+"who want to build a Store Online. Really practicable for E-commerce."
+msgstr ""

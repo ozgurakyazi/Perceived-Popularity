@@ -1,0 +1,13 @@
+.two-col > div {
+  width: 48%;
+  float:left;
+  margin-right: 2%;
+}
+.three-col > div {
+  width: 31.333%;
+  float: left;
+  margin-right: 2%;
+}
+.last-feature {
+  margin-right: 0 !important;
+}
