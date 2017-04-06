@@ -1,0 +1,35 @@
+.btn-circle {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding: 2px 0;
+  font-size: 10px;
+  line-height: 1.428571429;
+  border-radius: 10px;
+}
+div.gallery {
+    margin: 5px;
+
+    float: left;
+
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.vertical-align {
+    
+    align-items: center;
+}
+table.fixed { table-layout:fixed; }
+table.fixed td { overflow: hidden; }
