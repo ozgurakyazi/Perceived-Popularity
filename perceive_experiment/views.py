@@ -2,29 +2,34 @@ from django.shortcuts import render
 from django.shortcuts import redirect
 from django_ajax.decorators import ajax
 from django.contrib.auth.decorators import login_required
-from perceive_experiment.models import Image, LikeStat
+from perceive_experiment.models import Image, LikeStat,Configuration,LikeConf
 
-current_configuration=1 ##special number for each configuration in the system
+current_conf=Configuration.objects.get(conf_name="conf_1")  ##current configuration which is an entry in the configuration table.
 # Create your views here.
 def vote_page(request):
     if request.user.is_authenticated():
+        image_names=[]
+        like_counts=[]
+        dislike_counts=[]
+        like_status=[]
+
+        for img_name in current_conf.images:
+            temp_like_dislike = get_like_count(image_name=img_name, confg=current_conf)
+            like_counts.append(temp_like_dislike[0])
+            dislike_counts.append(temp_like_dislike[1])
+            temp_like_stat=get_like_stat(image_name=img_name, confg=current_conf, user=request.user)
+            like_status.append(temp_like_stat)
+
+        image_names = current_conf.images
         return render(request, "vote_page.html",
             { "images_info":[
-                {"image_ids":[
-                    1,2,3,4,5
-                ]
+                {"image_names":image_names
                 },
-                {"like_counts":[
-                    1,2,3,2,1
-                ]
+                {"like_counts":like_counts
                 },
-                {"dislike_counts":[
-                    1,0,3,2,1
-                ]
+                {"dislike_counts":dislike_counts
                 },
-                {"like_status":[
-                    -1,0,0,1,1
-                ]
+                {"like_status":like_status
                 }
              ]
             }
@@ -43,7 +48,7 @@ def like_dislike(request):
     #    pass
     result_like_stat=0
     try:
-        like_stat = LikeStat.objects.get(user_id=request.user,image__file_name=image_name)
+        like_stat = LikeStat.objects.get(user_id=request.user,image__file_name=image_name,configuration=current_conf)
         ## if execution here, then there is an already existing like or dislike
         if like_type == int(like_stat.like): ## if pressed button and the already existing like status are same, then we delete whatever it is
             like_stat.delete()
@@ -60,15 +65,49 @@ def like_dislike(request):
         try:
             Image.objects.get(file_name=image_name)
             print("here")
-            new_like_stat = LikeStat(user_id=request.user,image= Image.objects.get(file_name=image_name), like=like_type, configuration=current_configuration)
+            new_like_stat = LikeStat(user_id=request.user,image= Image.objects.get(file_name=image_name), like=like_type, configuration=current_conf)
             new_like_stat.save()
+            result_like_stat = like_type
             print("Like/dislike Added!!")
         except:
             print("possible problem: image_name does not exist in the system")
 
 
+    like_dislike = get_like_count(image_name, current_conf) ## first element in the return is like count, second one is dislike count
+
     return {
-        "image_like_count": 1,
-        "image_dislike_count":2,
-        "user_like_status":-1
+        "image_like_count": like_dislike[0],
+        "image_dislike_count":like_dislike[1],
+        "user_like_status":result_like_stat
     }
+
+def get_like_count(image_name,confg):
+    the_image = Image.objects.get(file_name=image_name)
+    the_conf =confg
+    like_conf = LikeConf.objects.get(image=the_image,conf=the_conf)
+    art_like =0
+    art_dislike =0
+    try:
+        art_like = like_conf.artificial_like ##find artificially added like
+        art_dislike = like_conf.artificial_like  ##find artificially added dislike
+    except:
+        pass
+
+    real_like = LikeStat.objects.filter(image=the_image, like=1, configuration=the_conf).count()
+    real_dislike = LikeStat.objects.filter(image=the_image, like=-1, configuration=the_conf).count()
+
+    result_like = art_like + real_like
+    result_dislike = art_dislike + real_dislike
+
+    return [result_like, result_dislike]
+
+def get_like_stat(image_name, confg, user):
+    result_like_stat = 0
+    the_image = Image.objects.get(file_name=image_name)
+    try:
+        like_obj = LikeStat.objects.get(user_id=user, image=the_image,configuration=confg )
+        result_like_stat = like_obj.like
+    except:
+        pass
+
+    return result_like_stat

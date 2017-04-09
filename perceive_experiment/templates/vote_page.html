@@ -6,7 +6,7 @@
 <script type="text/javascript">
   var images_data = "{{images_info|safe}}";
   images_data = JSON.parse(images_data.replace(/\'/ig,'\"'));
-  var image_names = images_data[0].image_ids;
+  var image_names = images_data[0].image_names;
   var like_counts = images_data[1].like_counts;
   var dislike_counts = images_data[2].dislike_counts;
   var like_status = images_data[3].like_status;
