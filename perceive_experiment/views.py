@@ -20,6 +20,8 @@ def vote_page(request):
             temp_like_stat=get_like_stat(image_name=img_name, confg=current_conf, user=request.user)
             like_status.append(temp_like_stat)
 
+        print(like_counts)
+        print(dislike_counts)
         image_names = current_conf.images
         return render(request, "vote_page.html",
             { "images_info":[
@@ -41,7 +43,7 @@ def vote_page(request):
 @login_required
 def like_dislike(request):
     image_name = request.POST["image_name"]
-    like_type = request.POST["like_or_dislike"]
+    like_type = int(request.POST["like_or_dislike"])
     print(image_name)
     print(like_type)
     #if request.content.like_or_dislike == 1:
@@ -50,8 +52,12 @@ def like_dislike(request):
     try:
         like_stat = LikeStat.objects.get(user_id=request.user,image__file_name=image_name,configuration=current_conf)
         ## if execution here, then there is an already existing like or dislike
-        if like_type == int(like_stat.like): ## if pressed button and the already existing like status are same, then we delete whatever it is
+        print("here")
+        print(like_type)
+        print(like_stat.like)
+        if like_type == like_stat.like: ## if pressed button and the already existing like status are same, then we delete whatever it is
             like_stat.delete()
+            print("deleted")
             result_like_stat = 0
         else: ## if it is a like and user pressed dislike, then the entry is changed to the dislike, or vice versa
             like_stat.like = like_type
@@ -84,12 +90,12 @@ def like_dislike(request):
 def get_like_count(image_name,confg):
     the_image = Image.objects.get(file_name=image_name)
     the_conf =confg
-    like_conf = LikeConf.objects.get(image=the_image,conf=the_conf)
     art_like =0
     art_dislike =0
     try:
+        like_conf = LikeConf.objects.get(image=the_image,conf=the_conf)
         art_like = like_conf.artificial_like ##find artificially added like
-        art_dislike = like_conf.artificial_like  ##find artificially added dislike
+        art_dislike = like_conf.artificial_dislike  ##find artificially added dislike
     except:
         pass
 

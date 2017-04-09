@@ -112,7 +112,7 @@ function like_dislike(event){
     }
   }
   send_like_dislike(is_like, photo_name)
-  buttons_class(photo_id, like_status[photo_index], like_counts[photo_index],dislike_counts[photo_index]);
+  //buttons_class(photo_name, like_status[photo_index], like_counts[photo_index],dislike_counts[photo_index]);
 
 }
 
@@ -123,6 +123,10 @@ function send_like_dislike(is_like, image_name){
     'image_name': image_name
   }, function(content){
       //onSuccess
-      alert(content);
+      the_dislike_count=content.image_dislike_count;
+      the_like_count=content.image_like_count;
+      like_stat=content.user_like_status;
+      buttons_class(image_name, like_stat, the_like_count,the_dislike_count);
+      console.log("Counts altered");
   })
 }
