@@ -26,10 +26,10 @@ function get_table_cell(image_name, like_count, dislike_count,like_status){
           '<span class="glyphicon glyphicon-thumbs-up">'+ like_count+
           '</span>'+
         '</button>'+
-        '<button type="button" class="btn '+ button_class[1]+' dislike_btn">'+
-          '<span class="glyphicon glyphicon-thumbs-down">'+ dislike_count+
-          '</span>'+
-        '</button><br>'+
+         //'<button type="button" class="btn '+ button_class[1]+' dislike_btn">'+
+        //  '<span class="glyphicon glyphicon-thumbs-down">'+ dislike_count+
+        //  '</span>'+
+        //'</button><br>'+
       '</div>'+
   '</div></td>';
   return template_col;

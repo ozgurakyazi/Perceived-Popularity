@@ -14,8 +14,8 @@ div.gallery {
 
 }
 
-div.gallery:hover {
-    border: 1px solid #777;
+div.galleryMM:hover {
+     border: 1px solid #777;
 }
 
 div.gallery img {
@@ -28,7 +28,7 @@ div.desc {
     text-align: center;
 }
 .vertical-align {
-    
+
     align-items: center;
 }
 table.fixed { table-layout:fixed; }
