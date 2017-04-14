@@ -59,18 +59,20 @@ function buttons_class(image_name, last_like_status, like_cnt, dislike_cnt){
   buttons[1] = $(buttons[1]);
   if(last_like_status == 1){
       buttons[0].attr("class", "btn btn-lg btn-success like_btn");
-      buttons[1].attr("class","btn btn-default dislike_btn");
+      //buttons[1].attr("class","btn btn-default dislike_btn");
   }
   else if(last_like_status == -1){
     buttons[0].attr("class","btn btn-lg btn-default like_btn");
-    buttons[1].attr("class","btn btn-danger dislike_btn");
+    //buttons[1].attr("class","btn btn-danger dislike_btn");
   }
   else{
     buttons[0].attr("class","btn btn-lg btn-default like_btn");
-    buttons[1].attr("class","btn btn-lg btn-default dislike_btn");
+    //buttons[1].attr("class","btn btn-lg btn-default dislike_btn");
   }
-  $(buttons[0]).find("span").text(like_cnt);
-  $(buttons[1]).find("span").text(dislike_cnt);
+  $("#"+image_name+" > .desc>span").text(like_cnt);
+  
+  //  $(buttons[0]).find("span").text(like_cnt);
+  //$(buttons[1]).find("span").text(dislike_cnt);
 }
 
 function like_dislike(event){
