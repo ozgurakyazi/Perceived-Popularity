@@ -88,7 +88,7 @@ def like_dislike(request):
     }
 
 def get_like_count(image_name,confg):
-    
+
     the_image = Image.objects.get(file_name=image_name)
     the_conf =confg
     art_like =0

@@ -22,10 +22,12 @@ function get_table_cell(image_name, like_count, dislike_count,like_status){
   var template_col='<td> <div id="'+image_name+'" class="gallery">'+
       '<img class="img-rounded" src="/static/art/'+ image_name+'.jpg" alt="" width="300" height="200">'+
       '<div class="desc">'+
-        '<button type="buton" class="btn '+ button_class[0]+ ' like_btn">'+
-          '<span class="glyphicon glyphicon-thumbs-up">'+ like_count+
+        '<button type="buton" class="btn btn-lg '+ button_class[0]+ ' like_btn">'+
+          '<span class="glyphicon glyphicon-thumbs-up"> '+
           '</span>'+
-        '</button>'+
+        '</button><span style="padding-left:10px; font-size:170%;"> '+
+        + like_count+
+        '</span>'
          //'<button type="button" class="btn '+ button_class[1]+' dislike_btn">'+
         //  '<span class="glyphicon glyphicon-thumbs-down">'+ dislike_count+
         //  '</span>'+
@@ -56,16 +58,16 @@ function buttons_class(image_name, last_like_status, like_cnt, dislike_cnt){
   buttons[0] = $(buttons[0]);
   buttons[1] = $(buttons[1]);
   if(last_like_status == 1){
-      buttons[0].attr("class", "btn btn-success like_btn");
+      buttons[0].attr("class", "btn btn-lg btn-success like_btn");
       buttons[1].attr("class","btn btn-default dislike_btn");
   }
   else if(last_like_status == -1){
-    buttons[0].attr("class","btn btn-default like_btn");
+    buttons[0].attr("class","btn btn-lg btn-default like_btn");
     buttons[1].attr("class","btn btn-danger dislike_btn");
   }
   else{
-    buttons[0].attr("class","btn btn-default like_btn");
-    buttons[1].attr("class","btn btn-default dislike_btn");
+    buttons[0].attr("class","btn btn-lg btn-default like_btn");
+    buttons[1].attr("class","btn btn-lg btn-default dislike_btn");
   }
   $(buttons[0]).find("span").text(like_cnt);
   $(buttons[1]).find("span").text(dislike_cnt);
