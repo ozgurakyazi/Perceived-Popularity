@@ -32,3 +32,9 @@ class LikeConf(models.Model):
     artificial_dislike = models.IntegerField()
     def __str__(self):
         return 'Image name: ' + self.image.file_name + ' Conf Name: '+ self.conf.conf_name+ ' ID: '+ str(self.id)
+
+class UserInfo(models.Model):
+    GENDER = (("ML","MALE"), ("FM", "Female"), ("O", "Other"),("NS", "Not Specified"))
+    user = models.OneToOneField(User)
+    age = models.IntegerField()
+    gender = models.CharField(max_length=13, choices=GENDER, default="NS")

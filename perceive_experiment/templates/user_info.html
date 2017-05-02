@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<script type="text/javascript" src="{% static 'django_ajax/js/jquery.ajax.min.js' %}"></script>
+<link href="/static/css/signin.css" rel="stylesheet"/>
+<div class="container-fluid " >
+  <h1 class="text-center">Personal Information</h1>
+
+  <script type="text/javascript">
+    $(function(){
+      $("body").css("padding-top","0px");
+      console.log("sad");
+
+      $('#submit_button').click(function(){
+        console.log("asd");
+        var gender = $("#gender").val() ;
+        var age = $("#age").val() ;
+        if(age != ""){
+          send_info(gender,age);
+        }
+
+      });
+    });
+    function send_info(gender, age){
+      ajaxPost('/info_submit',
+      {
+        'gender': gender,
+        'age': age
+      }, function(content){
+          //onSuccess
+          var ok = content.accepted;
+          if (ok == "1"){
+            window.location.href= "/";
+          }
+      })
+    }
+
+    //$('#info_form').submit(function (e) {
+      // custom handling here
+      //e.preventDefault();
+    //});
+    function submit_info(){
+      return false;
+
+    }
+
+
+  </script>
+
+  <div id="info_form" class="form-signin" action="" >
+    <p><label for="gender">Gender:</label>
+      <div class="form-inline">
+        <select name="fields" id="gender" class="form-control">
+            <option value="NS">Not Specified</option>
+            <option value="ML">Male</option>
+            <option value="FM">Female</option>
+            <option value="O">Other</option>
+        </select>
+      </div>
+    </p>
+    <p><label for="age">Age:</label> <input required="" id="age" placeholder="Age" class="form-control" type="number"></p>
+    <button id="submit_button" class="btn btn-lg btn-primary btn-block">Continue</button>
+  </div>
+
+</div>
+
+{% endblock %}

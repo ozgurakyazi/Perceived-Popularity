@@ -2,12 +2,15 @@ from django.shortcuts import render
 from django.shortcuts import redirect
 from django_ajax.decorators import ajax
 from django.contrib.auth.decorators import login_required
-from perceive_experiment.models import Image, LikeStat,Configuration,LikeConf
+from perceive_experiment.models import Image, LikeStat,Configuration,LikeConf,UserInfo
 
 current_conf=Configuration.objects.get(conf_name="conf_1")  ##current configuration which is an entry in the configuration table.
 # Create your views here.
 def vote_page(request):
     if request.user.is_authenticated():
+        if not user_info_exist(request.user):
+            return redirect("user_info_page")
+
         image_names=[]
         like_counts=[]
         dislike_counts=[]
@@ -38,6 +41,14 @@ def vote_page(request):
         )
     else:
         return redirect("account_login")
+
+
+@login_required
+def user_info(request):
+    if user_info_exist(request.user):
+        return redirect("vote_page")
+    else:
+        return render(request, "user_info.html")
 
 @ajax
 @login_required
@@ -86,6 +97,37 @@ def like_dislike(request):
         "image_dislike_count":like_dislike[1],
         "user_like_status":result_like_stat
     }
+def thank_you(request):
+    return render(request, "thank_you.html")
+
+
+@ajax
+@login_required
+def info_submit(request):
+    gender = request.POST["gender"]
+    age = int(request.POST["age"])
+    print(gender)
+    print(age)
+    new_user = UserInfo(user=request.user, age=age, gender=gender )
+    new_user.save()
+    return {
+        "accepted": "1"
+    }
+
+
+
+
+
+
+#### Methods Used--- These are not views...
+def user_info_exist(current_user):
+    try:
+        UserInfo.objects.get(user=current_user)
+        print("User has entered the info already...")
+        return True
+    except:
+        print("User did not any info...")
+        return False
 
 def get_like_count(image_name,confg):
 

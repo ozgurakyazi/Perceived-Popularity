@@ -6,7 +6,9 @@ $(function(){
   $(".dislike_btn").click(function(){
     like_dislike(this);
   });
-
+  $("#finish_button").click(function(){
+    window.location.href = "/thank_you";
+  });
 });
 
 
@@ -70,7 +72,7 @@ function buttons_class(image_name, last_like_status, like_cnt, dislike_cnt){
     //buttons[1].attr("class","btn btn-lg btn-default dislike_btn");
   }
   $("#"+image_name+" > .desc>span").text(like_cnt);
-  
+
   //  $(buttons[0]).find("span").text(like_cnt);
   //$(buttons[1]).find("span").text(dislike_cnt);
 }
