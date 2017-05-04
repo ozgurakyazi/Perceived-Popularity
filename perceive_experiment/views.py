@@ -50,6 +50,10 @@ def user_info(request):
     else:
         return render(request, "user_info.html")
 
+
+def terms_page(request):
+    return render(request, "agreement_terms.html")
+
 @ajax
 @login_required
 def like_dislike(request):

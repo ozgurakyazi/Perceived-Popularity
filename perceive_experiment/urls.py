@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^about_you$', views.user_info, name='user_info_page'),
     url(r'^info_submit$', views.info_submit, name='info_submit'),
     url(r'^thank_you$', views.thank_you, name='thank_you'),
+    url(r'^terms_of_agreement$', views.terms_page, name='terms_page'),
 ]

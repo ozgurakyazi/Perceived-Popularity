@@ -8,12 +8,13 @@
   <link href="/static/css/signin.css" rel="stylesheet"/>
   <h1 class="text-center">{% trans "Sign Up" %}</h1>
 
-  <form class="signup form-signin" id="signup_form" method="post" action="{% url 'account_signup' %}">
+  <form class="signup form-signin" id="signup_form" method="post" action="{% url 'account_signup' %}" onsubmit="return checkbox();">
     {% csrf_token %}
     {{ form.as_p }}
     {% if redirect_field_value %}
     <!--<input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />-->
     {% endif %}
+    <input id="terms_agr" type="checkbox" required name="" value=""> I accept the <a target="_blank" href="/terms_of_agreement">Terms of Agreement</a>.
     <button class="btn btn-lg btn-success btn-block" type="submit">{% trans "Sign Up" %} &raquo;</button>
     <div class="text-center" >
       <h3>Or</h3>
@@ -23,6 +24,12 @@
   </form>
   </div>
   <script type="text/javascript">
+    function checkbox(){
+      if($("#terms_agr").is(":checked")){
+        return true;
+      }
+      return false;
+    }
     $(function(){
       console.log("aha");
       $("body").css("padding-top","0px");
